@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#25131a">
+
+    <RadioGroup
+        android:id="@+id/difficultyRadioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="164dp"
+        android:layout_marginTop="248dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:id="@+id/easyButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Easy"
+            android:textColor="#FFFFFF"/>
+
+        <RadioButton
+            android:id="@+id/mediumButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Medium"
+            android:textColor="#FFFFFF"/>
+
+        <RadioButton
+            android:id="@+id/hardButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hard"
+            android:textColor="#FFFFFF"/>
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/characterChoiceText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="152dp"
+        android:layout_marginTop="444dp"
+        android:text="Choose a character"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/beginButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginBottom="72dp"
+        android:text="Start"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/mageButton"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginEnd="88dp"
+        android:layout_marginBottom="160dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/rogueButton"
+        app:srcCompat="@drawable/mage" />
+
+    <ImageButton
+        android:id="@+id/rogueButton"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="160dp"
+        android:background="@android:color/holo_orange_light"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/mageButton"
+        app:layout_constraintStart_toEndOf="@+id/knightButton"
+        app:srcCompat="@drawable/rogue" />
+
+    <ImageButton
+        android:id="@+id/knightButton"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="88dp"
+        android:layout_marginBottom="160dp"
+        android:background="@android:color/holo_blue_light"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/rogueButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/knight" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/nameInputLayout"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="115dp"
+        android:layout_marginEnd="1dp"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/nameInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/black"
+            android:hint="Enter Name Here: "
+            android:textColor="@color/white"
+            android:textColorHint="@color/white" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!--
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout"
+            android:layout_width="409dp"
+
+            android:layout_height="wrap_content"
+            android:layout_marginTop="124dp"
+            android:height="50dp"
+            android:hint="Enter name Here"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" /> -->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

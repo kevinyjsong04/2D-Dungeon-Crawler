@@ -1,2 +1,7 @@
-# CS-2340-Repo
-This is a new repository
+# CS2340A_Team19
+## Kevin Song
+## Matthew Lei
+## Phillip Zhang
+## Ivan Wang
+## Felix Wang
+## Vincentius Kosasih
